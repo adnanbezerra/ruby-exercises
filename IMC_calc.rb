@@ -1,8 +1,14 @@
+puts "Body Mass Index (BMI) Categories"
+puts "- Severe Thinness < 16"
+puts "- Normal 18.5 - 25"
+puts "- Overweight 25-30"
+puts "- Obese >35"
+
 puts "What's your height? (In meters, use .)"
-altura = gets.to_f
+height = gets.to_f
 
 puts "What's your weight? (In kilograms, use .)"
-peso = gets.to_f
+weight = gets.to_f
 
-imc = peso / (altura ** 2)
-puts 'Your BMI is', imc
+BMI = weight / (height ** 2)
+puts "Your BMI is #{BMI}"
