@@ -1,11 +1,8 @@
-print "First name: "
-firstName = gets.chomp
+print "Enter your full name: "
+fullName = gets.chomp.downcase.split
 
-print "Last name: "
-secondName = gets.chomp
+print "Email provider: "
+provider = gets.chomp.downcase.split.join("")
 
-print "Email provider (use .com, .me, .net etc): "
-provider = gets.chomp
-
-email = "#{firstName.downcase}#{secondName.downcase}@#{provider}"
+email = "#{fullName[0]}#{fullName[-1]}@#{provider}.com"
 puts "You email is #{email}"
